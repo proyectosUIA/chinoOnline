@@ -24,7 +24,8 @@
     Friend Function LoguearUsuario(ByVal email As String, ByVal contrasena As String) As Boolean
         Dim SQL As String
         Dim DS As New Data.DataSet
-        SQL = "Select * from Personas where email ='" & email & "' and contrasena = '" & contrasena & "'"
+
+        SQL = String.Format("Select * from Personas where email ='{0}' and contrasena = '{1}",email,contrasena)
         DB.LlenarDS(DS, SQL)
         If DS.Tables(0).Rows.Count > 0 Then
             Session("id") = DS.Tables(0).Rows.Item(0).Item(0).ToString

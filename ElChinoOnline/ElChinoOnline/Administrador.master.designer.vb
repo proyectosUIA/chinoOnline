@@ -11,5 +11,23 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class administrador
+Partial Public Class Administrador
+
+    '''<summary>
+    '''LBNombreUsuario1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LBNombreUsuario1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LBNombreUsuario2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LBNombreUsuario2 As Global.System.Web.UI.WebControls.Label
 End Class

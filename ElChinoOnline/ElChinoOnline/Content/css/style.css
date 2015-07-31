@@ -1,2 +1,16 @@
-﻿nav{overflow: visible; }
+﻿body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}v
+nav {
+    overflow: visible;
+}
 
+input[type="button"], button, input[type="reset"], input[type="submit"] {
+    width: auto;
+}
+
+footer.page-footer {
+    margin-top: 30px;
+}

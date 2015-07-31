@@ -81,12 +81,16 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.aspx" />
     <Content Include="Content\css\materialize.css" />
     <Content Include="Content\css\materialize.min.css" />
     <Content Include="Content\css\style.css" />
     <Content Include="Content\font\material-design-icons\LICENSE.txt" />
     <Content Include="Content\font\material-design-icons\Material-Design-Icons.svg" />
     <Content Include="Default.aspx" />
+    <Content Include="Employee.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Registro.aspx" />
     <Content Include="Scripts\js\jquery-2.1.4.min.js" />
     <Content Include="Scripts\js\materialize.js" />
     <Content Include="Scripts\js\materialize.min.js" />
@@ -94,6 +98,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin.aspx.designer.vb">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.vb">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Administrador.master.designer.vb">
       <DependentUpon>Administrador.master</DependentUpon>
     </Compile>
@@ -101,11 +112,11 @@
       <DependentUpon>Administrador.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cliente.master.designer.vb">
-      <DependentUpon>Cliente.master</DependentUpon>
+    <Compile Include="Clientes.master.designer.vb">
+      <DependentUpon>Clientes.master</DependentUpon>
     </Compile>
-    <Compile Include="Cliente.master.vb">
-      <DependentUpon>Cliente.master</DependentUpon>
+    <Compile Include="Clientes.master.vb">
+      <DependentUpon>Clientes.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
@@ -115,12 +126,26 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Empleado.master.designer.vb">
-      <DependentUpon>Empleado.master</DependentUpon>
+    <Compile Include="Empleados.master.designer.vb">
+      <DependentUpon>Empleados.master</DependentUpon>
     </Compile>
-    <Compile Include="Empleado.master.vb">
-      <DependentUpon>Empleado.master</DependentUpon>
+    <Compile Include="Empleados.master.vb">
+      <DependentUpon>Empleados.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee.aspx.designer.vb">
+      <DependentUpon>Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.aspx.vb">
+      <DependentUpon>Employee.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.vb">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="moduloBase.vb" />
     <Compile Include="Principal.Master.designer.vb">
@@ -149,6 +174,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Registro.aspx.designer.vb">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.aspx.vb">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -160,9 +192,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Principal.Master" />
-    <Content Include="Administrador.master" />
-    <Content Include="Empleado.master" />
-    <Content Include="Cliente.master" />
     <Content Include="Content\font\material-design-icons\Material-Design-Icons.eot" />
     <Content Include="Content\font\material-design-icons\Material-Design-Icons.ttf" />
     <Content Include="Content\font\material-design-icons\Material-Design-Icons.woff" />
@@ -182,6 +211,9 @@
     <Content Include="Content\font\roboto\Roboto-Thin.ttf" />
     <Content Include="Content\font\roboto\Roboto-Thin.woff" />
     <Content Include="Content\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="Administrador.master" />
+    <Content Include="Clientes.master" />
+    <Content Include="Empleados.master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
