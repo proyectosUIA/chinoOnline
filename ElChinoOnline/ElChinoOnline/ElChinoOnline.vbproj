@@ -87,6 +87,8 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\font\material-design-icons\LICENSE.txt" />
     <Content Include="Content\font\material-design-icons\Material-Design-Icons.svg" />
+    <Content Include="Content\image\favicon.ico" />
+    <Content Include="Content\image\logo.png" />
     <Content Include="Default.aspx" />
     <Content Include="Employee.aspx" />
     <Content Include="Home.aspx" />
@@ -230,9 +232,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\image\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

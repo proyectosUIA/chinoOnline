@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="Content/css/style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
+    <link runat="server" href="Content/image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
@@ -29,7 +29,7 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
-    <footer class="page-footer footer-copyright">
+    <footer class="page-footer footer-copyright blue darken-4">
         <div class="container center">
             © 2015 Copyright Gerald Barquero Valverde & Jose De La O Miranda 
        

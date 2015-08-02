@@ -15,7 +15,16 @@
         End If
         If LoguearUsuario(TxtEmail.Text, TxtPassword.Text) Then
             Response.Write("<script>alert('Datos Correctos')</script>")
-            'Response.Redirect("Principal.aspx")
+            Dim tipo As Integer = CInt(Session("tipousuario"))
+
+            Select Case tipo
+                Case 1
+                    Response.Redirect("Admin.aspx")
+                Case 2
+                    Response.Redirect("Employee.aspx")
+                Case 3
+                    Response.Redirect("Home.aspx")
+            End Select
         Else
             Response.Write("<script>alert('Datos incorrectos')</script>")
         End If
@@ -25,7 +34,7 @@
         Dim SQL As String
         Dim DS As New Data.DataSet
 
-        SQL = String.Format("Select * from Personas where email ='{0}' and contrasena = '{1}",email,contrasena)
+        SQL = String.Format("Select * from Personas where email ='{0}' and contrasena = '{1}'", email, contrasena)
         DB.LlenarDS(DS, SQL)
         If DS.Tables(0).Rows.Count > 0 Then
             Session("id") = DS.Tables(0).Rows.Item(0).Item(0).ToString
