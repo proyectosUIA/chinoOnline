@@ -1,0 +1,25 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Principal.Master" AutoEventWireup="false" CodeBehind="Clientes.master.vb" Inherits="ElChinoOnline.Clientes" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">Clientes</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#!">Second Sidebar Link</a></li>
+                        <li><asp:Label ID="LBNombreUsuario1" runat="server" Text=""></asp:Label></li>
+                    </ul>
+                    <ul id="slide-out" class="side-nav">
+                        <li><asp:Label ID="LBNombreUsuario2" runat="server" Text=""></asp:Label></li>
+                        <li><a href="#!">Second Sidebar Link</a></li>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+</asp:Content>
