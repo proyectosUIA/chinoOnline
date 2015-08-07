@@ -3,7 +3,7 @@ Public Class moduloBase
     Dim DB As New Data.OleDb.OleDbConnection
 
     Public Sub ConectarDB()
-        DB.ConnectionString = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ElchinoOnline;Data Source=GBARQUERO-T420\SQLEXPRESS"
+        DB.ConnectionString = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=ElchinoOnline;Data Source=localhost"
         DB.Open()
     End Sub
 
