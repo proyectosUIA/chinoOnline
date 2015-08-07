@@ -93,6 +93,11 @@
     <Content Include="Employee.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="HomeAdmin.aspx" />
+    <Content Include="ListaCategorias.aspx" />
+    <Content Include="listaClientes.aspx" />
+    <Content Include="ListaEmpleados.aspx" />
+    <Content Include="ListaOrdenesClientes.aspx" />
+    <Content Include="ListaProductos.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Scripts\js\jquery-2.1.4.min.js" />
     <Content Include="Scripts\js\materialize.js" />
@@ -156,6 +161,41 @@
     </Compile>
     <Compile Include="HomeAdmin.aspx.vb">
       <DependentUpon>HomeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ListaCategorias.aspx.designer.vb">
+      <DependentUpon>ListaCategorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCategorias.aspx.vb">
+      <DependentUpon>ListaCategorias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="listaClientes.aspx.designer.vb">
+      <DependentUpon>listaClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listaClientes.aspx.vb">
+      <DependentUpon>listaClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ListaEmpleados.aspx.designer.vb">
+      <DependentUpon>ListaEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEmpleados.aspx.vb">
+      <DependentUpon>ListaEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ListaOrdenesClientes.aspx.designer.vb">
+      <DependentUpon>ListaOrdenesClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaOrdenesClientes.aspx.vb">
+      <DependentUpon>ListaOrdenesClientes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ListaProductos.aspx.designer.vb">
+      <DependentUpon>ListaProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaProductos.aspx.vb">
+      <DependentUpon>ListaProductos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="moduloBase.vb" />
