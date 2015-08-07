@@ -11,50 +11,59 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Administrador
+Partial Public Class HomeAdmin
 
     '''<summary>
-    '''LBCerrar control.
+    '''BtnProductos control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LBCerrar As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BtnProductos As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''LBPagina control.
+    '''BtnAdministradores control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LBPagina As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BtnAdministradores As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''LBNombreUsuario1 control.
+    '''BtnCategorias control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LBNombreUsuario1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BtnCategorias As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''LBNombreUsuario2 control.
+    '''BtnEmpleados control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LBNombreUsuario2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BtnEmpleados As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Contenido1 control.
+    '''BtnOrdenes control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Contenido1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents BtnOrdenes As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''BtnClientes control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnClientes As Global.System.Web.UI.WebControls.Button
 End Class

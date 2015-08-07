@@ -3,6 +3,9 @@
     min-height: 100vh;
     flex-direction: column;
 }
+#form1 {
+    flex: 1 0 auto;
+  }
 nav {
     overflow: visible;
 }

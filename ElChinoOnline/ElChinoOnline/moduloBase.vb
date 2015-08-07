@@ -38,11 +38,21 @@ Public Class moduloBase
         End If
     End Function
 
-    Public Function consultartDB(ByVal Tabla As String, ByVal CampoLlave As String, ByVal Valor As String) As Data.DataSet
+    Public Function consultartDB(ByVal Tabla As String, ByVal CampoLlave As String, ByVal Valor As Integer) As Data.DataSet
         Dim SQL As String
         Dim DS As New Data.DataSet
         SQL = "Select * from " & Tabla & " where " & CampoLlave & " = '" & Valor & "'"
         LlenarDS(DS, SQL)
         Return DS
     End Function
+    Public Function listarProductos(ByVal Valor As Integer) As Data.DataSet
+        Dim SQL As String
+        Dim DS As New Data.DataSet
+        SQL = "Select nomb_producto as nombre, descripcion, cantidad, URLimagenproducto as imagen, Precio_producto.valor as valor from productos INNER JOIN Precio_producto ON Productos.Id_producto = Precio_producto.id_producto where Productos.id_categoria = '" & Valor & "'"
+
+        LlenarDS(DS, SQL)
+        Return DS
+    End Function
+
+
 End Class
