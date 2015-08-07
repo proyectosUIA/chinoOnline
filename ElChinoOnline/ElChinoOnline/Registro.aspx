@@ -68,7 +68,7 @@
                         <asp:Button ID="BtnRegistrar" runat="server" Text="Registrar" CssClass="btn waves-light col s12" />
                     </div>
                     <div class="input-field col s12">
-                        <p class="margin center medium-small sign-up">Ya posees una cuenta? <a href="page-login.html">Login</a></p>
+                        <p class="margin center medium-small sign-up">Ya posees una cuenta? <a href="Default.aspx">Login</a></p>
                     </div>
                 </div>
             </div>

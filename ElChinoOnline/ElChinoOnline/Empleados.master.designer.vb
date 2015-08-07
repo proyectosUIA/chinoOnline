@@ -32,11 +32,11 @@ Partial Public Class Empleados
     Protected WithEvents LBNombreUsuario2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Contenidoempleado control.
+    '''Contenido1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Contenidoempleado As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents Contenido1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

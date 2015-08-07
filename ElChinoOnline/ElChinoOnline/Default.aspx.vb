@@ -4,14 +4,13 @@
 
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        Session.RemoveAll()
     End Sub
 
     Protected Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         If (TxtEmail.Text = "") Or (TxtPassword.Text = "") Then
             Response.Write("<script>alert('Todos los datos son requeridos para el Login')</script>")
             Exit Sub
-
         End If
         If LoguearUsuario(TxtEmail.Text, TxtPassword.Text) Then
             Response.Write("<script>alert('Datos Correctos')</script>")
@@ -19,7 +18,7 @@
 
             Select Case tipo
                 Case 1
-                    Response.Redirect("Admin.aspx")
+                    Response.Redirect("HomeAdmin.aspx")
                 Case 2
                     Response.Redirect("Employee.aspx")
                 Case 3
