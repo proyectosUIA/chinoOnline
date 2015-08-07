@@ -98,6 +98,7 @@
     <Content Include="Scripts\js\materialize.js" />
     <Content Include="Scripts\js\materialize.min.js" />
     <Content Include="Scripts\js\scriptNav.js" />
+    <Content Include="updateClientes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -189,6 +190,13 @@
     </Compile>
     <Compile Include="Registro.aspx.vb">
       <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="updateClientes.aspx.designer.vb">
+      <DependentUpon>updateClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateClientes.aspx.vb">
+      <DependentUpon>updateClientes.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
