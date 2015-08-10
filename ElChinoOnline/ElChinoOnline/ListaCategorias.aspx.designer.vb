@@ -32,13 +32,13 @@ Partial Public Class ListaCategorias
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''DropDownList1 control.
+    '''DropDownList2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DropDownList2 As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''DSCategorias control.
@@ -77,40 +77,22 @@ Partial Public Class ListaCategorias
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TXTNomCategoria control.
+    '''TextBox2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TXTNomCategoria As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''TXTDescripcion control.
+    '''TextBox1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TXTDescripcion As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''TXTnuevoNombre control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TXTnuevoNombre As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''TXTnuevadescripcion control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TXTnuevadescripcion As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''BTNCancelar control.
@@ -149,15 +131,6 @@ Partial Public Class ListaCategorias
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TXTNomCategoria0 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TXTNomCategoria0 As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''Label6 control.
     '''</summary>
     '''<remarks>
@@ -165,15 +138,6 @@ Partial Public Class ListaCategorias
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''TXTDescripcion0 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TXTDescripcion0 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''BTNagregar control.

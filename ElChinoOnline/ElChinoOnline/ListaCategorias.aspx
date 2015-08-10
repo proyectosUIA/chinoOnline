@@ -12,9 +12,11 @@
                                 <asp:Label ID="Label1" runat="server" Text="Seleccionar categoria"></asp:Label>
                                 &nbsp;</td>
                             <td>
-                                <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="DSCategorias" DataTextField="nombre_categoria" DataValueField="descripcion_categoria" style="display: block;">
+                                
+                                <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="DSCategorias" DataTextField="nombre_categoria" DataValueField="id_categoria" style="display: block;">
                                 </asp:DropDownList>
-                                <asp:SqlDataSource ID="DSCategorias" runat="server" ConnectionString="<%$ ConnectionStrings:ElchinoOnline %>" SelectCommand="SELECT * FROM [Categoria_producto]"></asp:SqlDataSource>
+                                <asp:SqlDataSource ID="DSCategorias" runat="server" ConnectionString="<%$ ConnectionStrings:conexionBD %>" SelectCommand="SELECT * FROM [Categoria_producto]"></asp:SqlDataSource>
+                                
                             </td>
                             <td>
                                 <asp:Button ID="BTNConsultar" runat="server" Text="Consultar" />
@@ -31,10 +33,10 @@
                         </tr>
                         <tr>
                             <td style="width: 166px">
-                                <asp:TextBox ID="TXTNomCategoria" runat="server" Enabled="False"></asp:TextBox>
+                                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                             </td>
                             <td colspan="2">
-                                <asp:TextBox ID="TXTDescripcion" runat="server" Width="313px" Enabled="False"></asp:TextBox>
+                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
