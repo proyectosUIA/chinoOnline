@@ -77,7 +77,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <asp:Label ID="Label5" runat="server" Text="Nombre de Categoria"></asp:Label>
+                                <asp:Label ID="Label5" runat="server" Text="Nombre de Categoria1"></asp:Label>
                             </td>
                             <td>
                                 <asp:TextBox ID="TXTNomCategoria0" runat="server"></asp:TextBox>
