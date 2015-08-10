@@ -48,4 +48,13 @@ Partial Public Class Home
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GrvProductos As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''BtnAgregar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnAgregar As Global.System.Web.UI.WebControls.Button
 End Class

@@ -2,9 +2,7 @@
     Inherits System.Web.UI.Page
     Dim DB As New moduloBase
 
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
+    
 
     Protected Sub BtnListar_Click(sender As Object, e As EventArgs) Handles BtnListar.Click
         Dim categoria As Integer
@@ -14,26 +12,44 @@
         GrvProductos.DataSource = DSProductos
         GrvProductos.DataBind()
 
+
     End Sub
 
-    Private Sub GrvProductos_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles GrvProductos.RowDataBound
-        Try
-            ' Si se trata de una fila de datos...
-            If e.Row.RowType = DataControlRowType.DataRow Then
-                Dim celda As New TableCell()
-                Dim boton As New LinkButton()
+    Private Sub GrvProductos_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles GrvProductos.RowCommand
+        If (e.CommandName = "AddToCart") Then
+            ' Retrieve the row index stored in the CommandArgument property.
+            Dim index As Integer = Convert.ToInt32(e.CommandArgument)
 
-                boton.Text = "Detalles"
-                If e.Row.Cells.Count < 1 Then
-                    boton.CommandArgument = GrvProductos.DataKeys(e.Row.RowIndex).Value.ToString()
+            ' Retrieve the row that contains the button 
+            ' from the Rows collection.
+            Dim row As GridViewRow = GrvProductos.Rows(index)
+
+            ' Add code here to add the item to the shopping cart.
+
+        End If
+
+
+    End Sub
+
+    Private Sub DrlCategoria_PreRender(sender As Object, e As EventArgs) Handles DrlCategoria.PreRender, DrlCategoria.SelectedIndexChanged
+        Dim categoria As Integer
+        categoria = DrlCategoria.SelectedValue
+        Dim DSProductos As New Data.DataSet
+        DSProductos = DB.listarProductos(categoria)
+        GrvProductos.DataSource = DSProductos
+
+        GrvProductos.DataBind()
+    End Sub
+
+    Protected Sub BtnAgregar_Click(sender As Object, e As EventArgs) Handles BtnAgregar.Click
+        
+        For Each row As GridViewRow In GrvProductos.Rows
+            If row.RowType = DataControlRowType.DataRow Then
+                Dim chkRow As CheckBox = TryCast(row.Cells(1).FindControl("ChbxProducto"), CheckBox)
+                If chkRow.Checked Then
+                    Dim name As String = row.Cells(2).Text
                 End If
-
-                ' Añadimos el LinkButton a la celda, y la celda a la fila
-                celda.Controls.Add(boton)
-                e.Row.Controls.Add(celda)
             End If
-        Catch ex As Exception
-            Throw ex
-        End Try
+        Next
     End Sub
 End Class
