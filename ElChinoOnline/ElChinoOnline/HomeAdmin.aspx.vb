@@ -5,4 +5,7 @@
 
     End Sub
 
+    Protected Sub BtnCategorias_Click(sender As Object, e As EventArgs) Handles BtnCategorias.Click
+        Response.Redirect("ListaCategorias.aspx")
+    End Sub
 End Class

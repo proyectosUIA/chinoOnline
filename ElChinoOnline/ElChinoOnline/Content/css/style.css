@@ -11,7 +11,7 @@ nav {
 }
 
 input[type="button"], button, input[type="reset"], input[type="submit"] {
-    width: auto;
+    text-align: center;
 }
 
 footer.page-footer {

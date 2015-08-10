@@ -21,7 +21,7 @@
                             Para listar los productos seleccione una categoría:
                         <asp:DropDownList ID="DrlCategoria" runat="server" DataSourceID="DSCategorias" DataTextField="nombre_categoria" DataValueField="id_categoria" style="display: block;">
                         </asp:DropDownList>
-                        <asp:SqlDataSource ID="DSCategorias" runat="server" ConnectionString="<%$ ConnectionStrings:conexionBD %>" SelectCommand="SELECT [id_categoria], [nombre_categoria] FROM [Categoria_producto]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="DSCategorias" runat="server" ConnectionString="<%$ ConnectionStrings:ElchinoOnline %>" SelectCommand="SELECT [id_categoria], [nombre_categoria] FROM [Categoria_producto]"></asp:SqlDataSource>
                         <asp:Button ID="BtnListar" runat="server" Text="Listar productos" CssClass="btn waves-light" />
                         </p>
                     </div>
